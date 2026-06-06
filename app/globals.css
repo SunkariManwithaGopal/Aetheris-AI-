@@ -1,0 +1,22 @@
+/* Allow Tailwind's at-rules (suppress "Unknown at rule @tailwind" from linters) */
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+/* Smooth scrolling override */
+html, body {
+  background-color: #020617; /* slate-955 default dark backdrop background */
+  color: #f8fafc;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Hide standard ugly scrollbars for interactive tab viewports */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
